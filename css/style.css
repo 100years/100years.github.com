@@ -92,6 +92,10 @@ td { padding: 0; }
 
 .icon-bar { background: #fff; }
 
+
+.ico-language{ display: inline-block; vertical-align: middle; background-image: url(../images/flag.png); }
+.ico-english{width: 16px; height: 25px; background-position: 0px -22px;}
+
 /* ================================================================ *\
 	#Buttons
 \* ================================================================ */
@@ -152,7 +156,7 @@ td { padding: 0; }
 .jumbotron-image { display: table-cell; height: 535px; text-align: right; width: 100%; vertical-align: bottom; }
 .jumbotron-image img { max-width: 100%; }
 .jumbotron h5 { color: #008ed6; font-size: 14px; font-weight: bold; text-transform: uppercase; }
-.jumbotron h1 { margin: 15px 0 19px; color: #fff; font-size: 48px; }
+.jumbotron h1 { margin: 15px 0 19px; color: #fff; font-size: 46px; }
 .jumbotron p { font-size: 18px; margin-right: 20px; }
 .jumbotron-actions { margin-top: 60px; font-size: 0; }
 .jumbotron-actions .btn + .btn { margin-left: 20px; }
@@ -487,4 +491,40 @@ td { padding: 0; }
 	border:0px;
 
 
+}
+.settable td {
+	padding: 2px;
+}
+
+.header-language-switch {
+    font-size: 12px;
+}
+.header-language-switch {
+    
+    position: absolute;
+    top: 2px;
+    left: -16px;
+    z-index: 98;
+    overflow: hidden;
+    line-height: 30px;
+    width: 120px;
+    transition: all 0.25s ease 0s;
+}
+.header-language-switch.active {
+    background: #FDFDFD none repeat scroll 0% 0%;
+    border-radius: 6px;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.27);
+}
+.header-language-switch.active h3 .icon {
+    transform: rotate(-180deg);
+    transition: all 0.3s ease 0s;
+}
+.header-language-switch h3 .icon {
+    background: transparent url("../images/language-arrow.png") no-repeat scroll 0% 0%;
+    height: 5px;
+    width: 7px;
+    position: absolute;
+    right: 0px;
+    top: 13px;
+    transition: all 0.25s ease 0s;
 }
